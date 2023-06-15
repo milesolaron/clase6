@@ -4,14 +4,15 @@
   <title>Calculadora de Salario Anual</title>
 </head>
 <body>
-  <h2>Calculadora de salario de los familiares</h2>
-
-  <button onclick="agregarInput()">Agregar</button>
-  <button onclick="quitarInput()">Quitar</button>
+  <h2>Calculadora de salarios</h2>
+  <p>Escribí el salario anual de cada uno de los miembros de tu grupo familiar:</p>
+<form id="calculadora-salarios">
+  <button type="button" onclick="agregarSalariosAnuales()">Agregar</button>
+  <button type="button" onclick="quitarSalariosAnuales()">Quitar</button>
 
   <div id="container"></div>
 
-  <button onclick="calcularSalarios()">Calcular</button>
+  <button type="button" onclick="colocarResultados()">Calcular</button>
 
   <h2>Resultados</h2>
 
@@ -19,6 +20,6 @@
   <p>Menor salario anual: <span id="menor-salario"></span></p>
   <p>Salario anual promedio: <span id="promedio-anual"></span></p>
   <p>Salario mensual promedio: <span id="promedio-mensual"></span></p>
-
+</form>
   <script src="clase6tarea2.js"></script>
 </body>
